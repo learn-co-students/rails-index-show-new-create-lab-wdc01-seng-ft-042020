@@ -1,0 +1,19 @@
+<h1>Detail Page for Coupon</h1>
+
+<br>
+
+
+<div>
+    <div><h1>Coupon Code:  <%= @coupon.coupon_code %></h1></div>
+    <div><h1>Store: <%=@coupon.store%></h1></div>
+    
+</div>
+<br>
+<br>
+    <%form_tag coupons_path do%>
+    <label>Delete this Coupon</label> 
+    <%=select_tag "Delete"%>
+    <%end%>
+<br>
+<br>
+<%= link_to "Back to Index Page", coupons_path %>
