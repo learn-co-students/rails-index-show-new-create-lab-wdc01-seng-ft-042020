@@ -1,0 +1,16 @@
+<h1>Coupon Form</h1>
+
+<br>
+
+<br>
+<br>
+    <%=form_tag coupons_path do%>
+    <label>Coupon Code: </label> 
+    <%=text_field_tag :"coupon[coupon_code]"%>
+    <label>Store: </label> 
+    <%=text_field_tag :"coupon[store]"%>
+    <%=submit_tag "Submit Coupon"%>
+    <%end%>
+<br>
+<br>
+<%= link_to "Back to Index Page", coupons_path %>
